@@ -1,1 +1,90 @@
-{}
+{
+  "YkBUN9u1": {
+    "url": "https://example.com/very/long/url",
+    "code": "YkBUN9u1",
+    "created": "2026-06-27T07:44:12.396Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "iCRRx5PD": {
+    "url": "https://example.com",
+    "code": "iCRRx5PD",
+    "created": "2026-06-27T07:44:14.628Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "kVmeAUgh": {
+    "url": "https://example.com/very/long/url",
+    "code": "kVmeAUgh",
+    "created": "2026-06-27T07:48:15.230Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "Yg00QdPG": {
+    "url": "https://example.com",
+    "code": "Yg00QdPG",
+    "created": "2026-06-27T07:48:36.450Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "OJiCjj9L": {
+    "url": "https://example.com/very/long/url",
+    "code": "OJiCjj9L",
+    "created": "2026-06-27T07:51:12.977Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "WOurOJwE": {
+    "url": "https://example.com",
+    "code": "WOurOJwE",
+    "created": "2026-06-27T07:51:15.092Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "EvwmD5f1": {
+    "url": "https://example.com/very/long/url",
+    "code": "EvwmD5f1",
+    "created": "2026-06-27T07:52:50.407Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "OliNUQtA": {
+    "url": "https://example.com",
+    "code": "OliNUQtA",
+    "created": "2026-06-27T07:52:52.489Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "xW2t9hHq": {
+    "url": "https://example.com/very/long/url",
+    "code": "xW2t9hHq",
+    "created": "2026-06-27T07:54:36.269Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "sKuR1oJF": {
+    "url": "https://example.com",
+    "code": "sKuR1oJF",
+    "created": "2026-06-27T07:54:40.314Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  },
+  "Ys3lpktu": {
+    "url": "https://example.com",
+    "code": "Ys3lpktu",
+    "created": "2026-06-27T07:56:24.841Z",
+    "clicks": 0,
+    "referrers": {},
+    "countries": {}
+  }
+}

@@ -1,3 +1,4 @@
+// src/routers/qrcode.js
 const qrService = require('../services/qrService');
 const fs = require('fs').promises;
 
@@ -8,7 +9,10 @@ async function routes(fastify, options) {
       const { data, options = {} } = request.body;
       
       if (!data) {
-        return reply.status(400).send({ error: 'Data is required' });
+        return reply.status(400).send({ 
+          success: false,
+          error: 'Data is required' 
+        });
       }
       
       const result = await qrService.generateQR(data, options);
@@ -17,7 +21,10 @@ async function routes(fastify, options) {
         ...result
       };
     } catch (error) {
-      return reply.status(400).send({ error: error.message });
+      return reply.status(400).send({ 
+        success: false,
+        error: error.message 
+      });
     }
   });
 
@@ -27,7 +34,10 @@ async function routes(fastify, options) {
       const { data, options = {} } = request.body;
       
       if (!data) {
-        return reply.status(400).send({ error: 'Data is required' });
+        return reply.status(400).send({ 
+          success: false,
+          error: 'Data is required' 
+        });
       }
       
       const result = await qrService.generateBarcode(data, options);
@@ -36,17 +46,23 @@ async function routes(fastify, options) {
         ...result
       };
     } catch (error) {
-      return reply.status(400).send({ error: error.message });
+      return reply.status(400).send({ 
+        success: false,
+        error: error.message 
+      });
     }
   });
 
-  // Decode QR Code (upload image)
+  // Decode QR Code
   fastify.post('/decode', async (request, reply) => {
     try {
       const { imagePath } = request.body;
       
       if (!imagePath) {
-        return reply.status(400).send({ error: 'Image path is required' });
+        return reply.status(400).send({ 
+          success: false,
+          error: 'Image path is required' 
+        });
       }
       
       const result = await qrService.decodeQR(imagePath);
@@ -55,7 +71,10 @@ async function routes(fastify, options) {
         ...result
       };
     } catch (error) {
-      return reply.status(400).send({ error: error.message });
+      return reply.status(400).send({ 
+        success: false,
+        error: error.message 
+      });
     }
   });
 
@@ -69,10 +88,16 @@ async function routes(fastify, options) {
         await fs.access(filePath);
         return reply.sendFile(filename, qrService.qrDir);
       } catch {
-        return reply.status(404).send({ error: 'File not found' });
+        return reply.status(404).send({ 
+          success: false,
+          error: 'File not found' 
+        });
       }
     } catch (error) {
-      return reply.status(404).send({ error: error.message });
+      return reply.status(404).send({ 
+        success: false,
+        error: error.message 
+      });
     }
   });
 }
