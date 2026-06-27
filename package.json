@@ -1,0 +1,27 @@
+{
+  "name": "api-frooshi",
+  "version": "2.0.0",
+  "description": "Multi-service API with 9 different utilities",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "@fastify/cors": "^8.2.0",
+    "@fastify/rate-limit": "^8.0.0",
+    "abstract-logging": "^2.0.1",
+    "axios": "^1.4.0",
+    "cheerio": "^1.2.0",
+    "fastify": "^4.17.0",
+    "nanoid": "^4.0.2",
+    "node-cron": "^3.0.2",
+    "qrcode": "^1.5.3",
+    "rss-parser": "^3.13.0",
+    "whois": "^2.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
